@@ -1,0 +1,30 @@
+How to compile and run:
+
+COMPILE:
+for serial: 
+  make area.c-serial
+for openmp: 
+  make area.c-openmp
+for mpi: 
+  make area.c-mpi
+for openmp and mpi: 
+  make area.c-mpi-openmp
+for all: 
+  make all
+
+The make takes in the following options:
+NO_X11=1 	for no X windowing
+STAT_KIT=1	for stat kit results
+
+RUN:
+for serial:	./area.c-serial
+for openmp: 	./area.c-openmp
+for mpi: 	mpirun -np [n] ./area.c-mpi
+for mpi-openmp: mpirun -np [n] ./area.c-mpi-openmp
+
+all runs take the following options:
+-n = number of rectangles
+-l = left x boundary of the domain
+-r = right x boundary of the domain
+-x = 'display' or 'no-display' (without the quotation marks, default is display)
+-w = 'gap' or 'no-gap' (without the quotation marks, default is gap)

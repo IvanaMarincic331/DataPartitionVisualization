@@ -1,0 +1,19 @@
+How to compile and run:
+
+COMPILE:
+
+for mpi: make area.c-mpi
+
+The make takes in the following options:
+NO_X11=1 	for no X windowing
+STRIPING=1	for striping activites and inclusion of MPE drawing routines
+
+RUN:
+for mpi: mpirun -np [n] ./area.c-mpi
+
+all runs take in the following options:
+-n = number of rectangles
+-l = left x boundary
+-r = right x boundary
+-x = 'display' or 'no-display' (without the quotation marks, default is display)
+-w = 'gap' or 'no-gap' (without the quotation marks) #not needed for striping
