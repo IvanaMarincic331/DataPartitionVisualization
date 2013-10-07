@@ -2,6 +2,7 @@ summer2013
 ==========
 
 Summer Research Project with Elizabeth Shoop June-August 2013
+#############################################################
 
 The project I worked on this summer is a visualization of numerical integration, that shows several versions of the program:
 serial, parallel (shared memory), distributed and heterogeneous (parallel & distributed) computing.
